@@ -11,8 +11,32 @@ let employee = {
 };
 
 // Convert to JSON String
-let jsonValue = JSON.stringify(employee);
-console.log(jsonValue);
+//console.log(employee)
+let jsonVlaue = JSON.stringify(employee);
+//console.log(jsonVlaue);
+jsonValue = JSON.stringify(employee, null, 2);
+//console.log(jsonValue);
+
+
+//Conver json string value back to JS object
+let newEmployee = JSON.parse(jsonValue);
+console.log(newEmployee);
+
+//WRiting json directly
+let jsonString = `{
+  "firstName": "ELizabeth",
+  "lastName": "Jumeau"
+}`;
+let jsonObj = JSON.parse(jsonString);
+console.log(jsonObj);
+
+
+// improperly formatted JSON
+let notJSON = "hello!";
+let newObj = JSON.parse(notParse);
+
+/*
+// Convert to JSON String with Formatting
 jsonValue = JSON.stringify(employee, null, 2);
 console.log(jsonValue);
 
@@ -31,3 +55,4 @@ console.log(obj);
 // Improperly formatted JSON
 let notJSON = "hello!";
 let newObj = JSON.parse(notJSON);
+*/

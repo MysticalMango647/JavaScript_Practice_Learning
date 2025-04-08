@@ -13,9 +13,11 @@ let description = `${firstName} is ${age} years old`;
 console.log(description);
 
 // Converting a string to a number
-let ageString = "41";
+let ageString = "41o";
 let ageNum = Number(ageString);
 console.log(typeof(ageNum));
+console.log('number thats a num and string ${ageNum}');
+console.log(ageNum);
 let ageNewNum = new Number(ageString); // You don't want this
 console.log(typeof(ageNewNum));
 
@@ -27,7 +29,7 @@ let isInvalid = isNaN(ageNum2);
 console.log(`Is Invalid: ${isInvalid}`);
 
 // Converting a value to a boolean
-let num1 = 1;
+let num1 = 2;
 let num2 = 0;
 let bool1 = Boolean(num1);
 let bool2 = Boolean(num2);
