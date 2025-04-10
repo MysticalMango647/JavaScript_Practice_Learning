@@ -14,7 +14,9 @@ console.log(`val4: ${val4}`);
 let val5 = 3 / 1;
 console.log(`val5: ${val5}`);
 let val6 = 21 / 9;
+let val6short = val6.toFixed(2);
 console.log(`val6: ${val6}`);
+console.log(`val6short: ${val6short}`);
 
 // Multiplication
 let val7 = 3 * 2;

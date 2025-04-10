@@ -40,7 +40,9 @@ let options = {
   dateStyle: "short",
   timeStyle: "short"};
 
-console.log(``)
+console.log(`Custom Date: ${date1.toLocaleString('en-US', options)}`);
+console.log(`Custom Date: ${date1.toLocaleString('ar-KW', options)}`);
+
 
 
 
